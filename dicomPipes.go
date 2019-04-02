@@ -126,7 +126,7 @@ func (di *DicomFile) WriteToFile(in <-chan DicomMessage, done *sync.WaitGroup, f
 
 	go func() {
 		for dcmMsg := range in {
-			_, err := file.WriteString(fmt.Sprintln(dcmMsg.msg))
+			_, err := file.WriteString(fmt.Sprintln(*dcmMsg.msg))
 			if err != nil {
 				panic(err)
 			}
@@ -153,7 +153,7 @@ func (di *DicomFile) Log(in <-chan DicomMessage, done *sync.WaitGroup) <-chan Di
 	done.Add(1)
 	go func() {
 		for dcmMsg := range in {
-			logger.Println(dcmMsg.msg)
+			logger.Println(*dcmMsg.msg)
 			out <- DicomMessage{dcmMsg.msg, waitMsg}
 			<-waitMsg
 			dcmMsg.wait <- true
