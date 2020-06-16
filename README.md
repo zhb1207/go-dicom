@@ -1,4 +1,4 @@
-# DICOM parser in Go [![GoDoc](https://godoc.org/github.com/gillesdemey/go-dicom?status.svg)](https://godoc.org/github.com/gillesdemey/go-dicom) [![wercker status](https://app.wercker.com/status/c250d72bc82a5d8f267c7ee0b9e839bc/s/master "wercker status")](https://app.wercker.com/project/bykey/c250d72bc82a5d8f267c7ee0b9e839bc)
+# DICOM parser in Go [![GoDoc](https://godoc.org/github.com/zhb1207/go-dicom?status.svg)](https://godoc.org/github.com/zhb1207/go-dicom) [![wercker status](https://app.wercker.com/status/c250d72bc82a5d8f267c7ee0b9e839bc/s/master "wercker status")](https://app.wercker.com/project/bykey/c250d72bc82a5d8f267c7ee0b9e839bc)
 
 ## Usage
 ```Go
@@ -6,7 +6,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/gillesdemey/go-dicom"
+	"github.com/zhb1207/go-dicom"
 	"io/ioutil"
 )
 

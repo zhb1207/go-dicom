@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/gillesdemey/go-dicom"
+	"github.com/zhb1207/go-dicom"
 	"io/ioutil"
 	"os"
 	fp "path/filepath"
